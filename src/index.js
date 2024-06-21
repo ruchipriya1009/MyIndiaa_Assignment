@@ -11,9 +11,10 @@ app.use("/api", userRoute);
 app.use("/api", productRoute);
 app.get("/", async (req, res) => {
   try {
-    res.status(201).send({ msg: "Server is Running....." });
+    res.status(201).send("server is Running....<br><br><h1>Welcome Myindiaa</h1>");
+
   } catch (error) {
-    res.status(500).send({ msg: "something went wrong" });
+    res.status(500).send({ message: "Something Went Wrong" });
   }
 });
 
